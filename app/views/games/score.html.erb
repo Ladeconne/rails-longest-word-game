@@ -1,0 +1,11 @@
+<h1>Score page:</h1>
+
+<% case @control %>
+<% when "Not in letters" %>
+  <p>Not in letters</p>
+<% when "Does not exist" %>
+  <p>Does not exist</p>
+<% when "Congrats" %>
+  <p>Congrats <%= @score %><p>
+<% end %>
+<%= link_to  "Play again", new_path %>
